@@ -1,1 +1,13 @@
+게시판이 있고 그 게시판을 사용하는 일반유저와 마스터 유저가 있음 
+마스터유저는 rest api로 유저 정보 조회, 삭제, 수정이 가능함 
 
+User (일반 사용자)
+MasterUser (관리자)
+MasterUser → REST API로 User 조회/삭제/수정
+
+
+저장하는법
+git status
+git add .
+git commit -m "해당 한일 작성"
+git push
