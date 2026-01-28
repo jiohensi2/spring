@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Detail</title>
+</head>
+<body>
+
+<h1 th:text="${question.subject}"></h1>
+
+<hr>
+
+<p th:text="${question.content}"></p>
+
+<hr>
+
+<a th:href="@{/question/modify/{id}(id=${question.id})}">수정</a>
+<a th:href="@{/question/delete/{id}(id=${question.id})}">삭제</a>
+<a href="/question/list">목록</a>
+
+</body>
+</html>

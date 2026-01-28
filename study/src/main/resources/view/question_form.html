@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Question Form</title>
+</head>
+<body>
+
+<h1>게시글 작성 / 수정</h1>
+
+<form method="post">
+
+    제목 <br>
+    <input type="text" name="subject" th:value="${questionForm.subject}">
+    <br><br>
+
+    내용 <br>
+    <textarea name="content" rows="10" cols="50"
+              th:text="${questionForm.content}"></textarea>
+    <br><br>
+
+    <button type="submit">저장</button>
+
+</form>
+
+<a href="/question/list">목록으로</a>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Question List</title>
+</head>
+<body>
+
+<h1>게시판 목록</h1>
+
+<a href="/question/create">글쓰기</a>
+
+<hr>
+
+<ul>
+    <li th:each="q : ${questionList}">
+        <a th:href="@{/question/detail/{id}(id=${q.id})}" 
+           th:text="${q.subject}">
+        </a>
+    </li>
+</ul>
+
+</body>
+</html>
